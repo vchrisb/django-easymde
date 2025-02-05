@@ -1,1 +1,1 @@
-.EasyMDEContainer{width:100%}.EasyMDEContainer .CodeMirror-fullscreen{z-index:2000}.CodeMirror-fullscreen+.editor-preview-side{z-index:2000}
+.CodeMirror{color:unset;background:unset}.editor-preview{background:var(--darkened-bg)}.editor-toolbar button.active,.editor-toolbar button:hover{background:unset}.EasyMDEContainer{width:100%}.EasyMDEContainer .CodeMirror-fullscreen{z-index:2000;background:var(--body-bg)}.CodeMirror-fullscreen+.editor-preview-side{z-index:2000}.editor-toolbar.fullscreen{background:var(--body-bg)}
