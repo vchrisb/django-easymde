@@ -1,17 +1,10 @@
-try:
-    # django > 3 
-    from django.utils.encoding import force_str
-except ImportError:
-    # django 2 
-    from django.utils.encoding import force_unicode as force_str
-
-from django.utils.functional import Promise
-
 import json
+
+from django.utils.encoding import force_str
+from django.utils.functional import Promise
 
 
 class LazyEncoder(json.JSONEncoder):
-
     def default(self, obj):
         if isinstance(obj, Promise):
             return force_str(obj)
